@@ -1,0 +1,129 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Lato", sans-serif;
+}
+
+/* using color */
+
+:root {
+    --primary: #D81159;
+    --secondary: #0496FF;
+    --light: #ffffff;
+}
+
+/* spacing */
+
+
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: 0 0 8px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+main input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1b1b1b;
+    border-radius: 5px;
+}
+
+main button {
+    padding: 7px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--light);
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+main .task-btn {
+    display: flex;
+    gap: 10px;
+}
+
+main button:hover {
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+li {
+    color: var(--light);
+    font-size: 2rem;
+    background-color: var(--secondary);
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+ 
+li div {
+    display: flex;
+    gap: 20px;
+}
+
+li div button:nth-child(1) {
+    background-color: red;
+    font-size: 16px;
+    border: none
+}
+
+li div button:nth-child(2) {
+    background-color: var(--primary);
+    border: none
+}
+
+li div button:nth-child(1):hover,
+li div button:nth-child(2):hover {
+    background-color: var(--light);
+    color: var(--secondary);
+}
+
+.error_box {
+    font-size: 18px;
+    color: var(--light);
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 0 4px #1b1b1b;
+    background-color: #fff;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    color: var(--secondary);
+}
+
+.error-text {
+    color: #ff0000;
+}
+
+.success-text {
+    color: #00ff00;
+}
