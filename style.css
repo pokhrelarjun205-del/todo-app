@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+main .container{
+   padding: 30px;
+   background-color: red;
+   border-radius: 10px;
+   min-width:1000px;
+   min-height: 500px;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   align-items: center;
+   justify-content: center;
+
+}
+ul{
+    display: inline;
+}
+li{
+    display: flex;
+    width: 100%;
+    list-style:none;
+    gap: 50px;
+}
+.task-action{
+    display: flex;
+}

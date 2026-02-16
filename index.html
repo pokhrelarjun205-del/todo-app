@@ -8,15 +8,38 @@
       src="https://kit.fontawesome.com/576ee3e0f8.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <form action="">
-        <div class="add-task-wrapper">
-          <input type="text" name="" id="" />
-          <button type="submit"><i class="fa-regular fa-square-plus"></i><span>Add</span></button>
+    <main>
+      <div class="container">
+        <form action="">
+          <div class="add-task-wrapper">
+            <input type="text" name="" id="" required autocomplete="off" />
+            <button type="submit">
+              <i class="fa-regular fa-square-plus"></i><span>Add</span>
+            </button>
+          </div>
+        </form>
+        <div class="task-list">
+          <ul>
+            <li>
+              <span>My task Buy Milk</span>
+              <div class="task-action">
+                <div class="completed-mark">
+                  <input type="checkbox" name="completed" />
+                </div>
+                <div class="edit-button">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <div class="delete-button">
+                  <i class="fa-solid fa-trash-can"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-      </form>
-    </div>
+      </div>
+    </main>
   </body>
 </html>
