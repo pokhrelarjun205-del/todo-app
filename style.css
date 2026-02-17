@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 main {
     width: 90%;
     margin: 0 auto;
@@ -13,28 +14,69 @@ main {
     height: 100vh;
 
 }
-main .container{
-   padding: 30px;
-   background-color: red;
-   border-radius: 10px;
-   min-width:1000px;
-   min-height: 500px;
-   display: flex;
-   flex-direction: column;
-   gap: 30px;
-   align-items: center;
-   justify-content: center;
+
+main .container {
+    padding: 30px;
+    border-radius: 10px;
+    min-width: 1000px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
 
 }
-ul{
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1b1b1b;
+    border-radius: 5px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form button {
+    padding: 7px;
+    cursor: pointer;
+    background-color: #007FFF;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+
+    border: 1px solid #1b1b1b;
+    opacity: 0.7;
+
+}
+
+ul {
     display: inline;
 }
-li{
+
+li {
     display: flex;
     width: 100%;
-    list-style:none;
+    list-style: none;
     gap: 50px;
 }
-.task-action{
+
+.task-action {
     display: flex;
 }
