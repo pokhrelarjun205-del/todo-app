@@ -48,11 +48,25 @@ form.addEventListener("submit", (e) => {
         validationBox.classList.add("hidden");
     }, 3000);
     taskContainer.append(li);
-    // mark completed tasks
-    checkBox.addEventListener("click", () => checkBox.checked ? span.classList.add("completed-task") : span.classList.remove("completed-task"));
 
+    let objectContent = {
+        id: Date.now(),
+        taskText: taskText,
+        completedTask: false,
+    }
+    tasks.push(objectContent);
+
+
+    // mark completed tasks
+    checkBox.addEventListener("click", () => {
+        checkBox.checked ? span.classList.add("completed-task") : span.classList.remove("completed-task");
+        objectContent.completedTask = checkBox.checked;
+    })
     // delete Functions
     delBtn.addEventListener("click", () => {
         li.remove();
-    })
+    });
+
+
+
 })
