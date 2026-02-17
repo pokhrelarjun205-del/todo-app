@@ -1,7 +1,22 @@
+/*
+======================
+Importing Google Fonts
+======================
+*/
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*
+======================
+Css reset spacing
+======================
+*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "SN Pro", sans-serif;
+    ;
 }
 
 main {
@@ -11,19 +26,21 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 
 }
 
 main .container {
     padding: 30px;
     border-radius: 10px;
-    min-width: 1000px;
-    min-height: 500px;
     display: flex;
     flex-direction: column;
     gap: 30px;
     justify-content: center;
+    background-color: #590925;
+    color: #fff;
+    width: 100%;
+    min-height: 50vh;
 
 }
 
@@ -66,17 +83,56 @@ form button:hover {
 
 }
 
-ul {
-    display: inline;
-}
+
 
 li {
     display: flex;
     width: 100%;
     list-style: none;
     gap: 50px;
+
 }
+
+li span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
 
 .task-action {
     display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: lighter;
+}
+
+.task-action button {
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    border: none;
+    padding: 4px;
+    color: #590925;
+    transition: all 0.1s ease-in-out;
+}
+
+.task-action button:hover {
+    scale: 1.1;
+}
+
+.small-box input[type="checkbox"] {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.small-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    opacity: 0.5;
 }

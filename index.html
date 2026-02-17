@@ -15,7 +15,14 @@
       <div class="container">
         <form action="">
           <div class="add-task-wrapper">
-            <input type="text" name="" id="" required autocomplete="off" placeholder="Enter Your Tasks..."/>
+            <input
+              type="text"
+              name=""
+              id=""
+              required
+              autocomplete="off"
+              placeholder="Enter Your Tasks..."
+            />
           </div>
           <button type="submit">
             <i class="fa-regular fa-square-plus"></i><span>Add Task</span>
@@ -24,16 +31,22 @@
         <div class="task-list">
           <ul>
             <li>
-              <span>My task Buy Milk</span>
-              <div class="task-action">
+              <div class="small-box">
                 <div class="completed-mark">
                   <input type="checkbox" name="completed" />
                 </div>
+                <span class="task-content">Buy Milk</span>
+              </div>
+              <div class="task-action">
                 <div class="edit-button">
-                  <i class="fa-solid fa-pen-to-square"></i>
+                  <button class="edit-btn">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
                 </div>
                 <div class="delete-button">
-                  <i class="fa-solid fa-trash-can"></i>
+                  <button class="del-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
                 </div>
               </div>
             </li>
