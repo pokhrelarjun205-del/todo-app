@@ -101,7 +101,10 @@ li {
     width: 100%;
     list-style: none;
     gap: 50px;
-
+    background-color: #007FFF;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
 }
 
 li span {
@@ -154,4 +157,8 @@ li span {
 
 .error {
     color: red;
+}
+
+.hidden {
+    display: none;
 }
