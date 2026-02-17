@@ -57,9 +57,11 @@ form input {
     border-radius: 5px;
 }
 
+
 form input:focus {
-    outline: none;
+    border-color: #007FFF;
 }
+
 
 form button {
     padding: 7px;
@@ -83,7 +85,11 @@ form button:hover {
 
 }
 
-
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
 li {
     display: flex;
@@ -117,7 +123,7 @@ li span {
 }
 
 .task-action button:hover {
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .small-box input[type="checkbox"] {
