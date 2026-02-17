@@ -12,7 +12,6 @@ form.addEventListener("submit", (e) => {
         validationBox.classList.add("error")
         validationBox.classList.remove("hidden");
         return;
-
     }
     // creating element
     let li = document.createElement("li");
@@ -45,15 +44,12 @@ form.addEventListener("submit", (e) => {
     validationBox.classList.add("success");
     validationBox.classList.remove("error");
     validationBox.classList.remove("hidden");
-
     setTimeout(() => {
         validationBox.classList.add("hidden");
     }, 3000);
     taskContainer.append(li);
     // mark completed tasks
     checkBox.addEventListener("click", () => checkBox.checked ? span.classList.add("completed-task") : span.classList.remove("completed-task"));
-
-
 
     // delete Functions
     delBtn.addEventListener("click", () => {
