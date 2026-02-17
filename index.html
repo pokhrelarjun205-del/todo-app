@@ -13,24 +13,25 @@
   <body>
     <main>
       <div class="container">
+        <h1>Todo App By Arjun</h1>
         <form action="">
           <div class="add-task-wrapper">
             <input
               type="text"
               name=""
-              id=""
-              required
+              class="task-input"
               autocomplete="off"
               placeholder="Enter Your Tasks..."
             />
           </div>
-          <button type="submit">
+          <div class="status"></div>
+          <button type="submit" class="add-btn">
             <i class="fa-regular fa-square-plus"></i><span>Add Task</span>
           </button>
         </form>
-        <div class="task-list">
-          <ul>
-            <li>
+        <div class="task-list-wrapper">
+          <ul class="task-list">
+            <!-- <li>
               <div class="small-box">
                 <div class="completed-mark">
                   <input type="checkbox" name="completed" />
@@ -49,10 +50,11 @@
                   </button>
                 </div>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
