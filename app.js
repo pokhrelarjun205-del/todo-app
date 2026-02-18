@@ -65,8 +65,8 @@ form.addEventListener("submit", (e) => {
     // delete Functions
     delBtn.addEventListener("click", () => {
         li.remove();
+        tasks = tasks.filter(curElement => objectContent.id !== curElement.id);
+
     });
-
-
 
 })
