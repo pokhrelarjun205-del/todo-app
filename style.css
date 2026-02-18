@@ -39,14 +39,14 @@ main .container {
     justify-content: center;
     background-color: #590925;
     color: #fff;
-    width: 100%;
+    width: 50%;
     min-height: 50vh;
 
 }
 
 h1 {
     text-align: center;
-    font-weight: lighter;
+  font-size: 25px;
 }
 
 form {
