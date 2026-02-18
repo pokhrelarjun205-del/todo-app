@@ -4,6 +4,8 @@ let taskContainer = document.querySelector(".task-list");
 let taskContent = document.querySelector(".task-input");
 let validationBox = document.querySelector(".status");
 let tasks = [];
+let editableTask = null;
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     let taskText = taskContent.value.trim();
@@ -68,5 +70,9 @@ form.addEventListener("submit", (e) => {
         tasks = tasks.filter(curElement => objectContent.id !== curElement.id);
 
     });
+    editBtn.addEventListener("click", () => {
+        editableTask = objectContent.id
+        taskContent.value = objectContent.taskText;
+    })
 
 })
