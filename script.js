@@ -5,14 +5,35 @@ let taskContent = document.querySelector(".task-input");
 let validationBox = document.querySelector(".status");
 let tasks = [];
 let editableTask = null;
+let editableElement = null;
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     let taskText = taskContent.value.trim();
+
+
+    // edit logic
+
+
     if (taskText === "") {
         validationBox.textContent = "Tasks can't be empty";
         validationBox.classList.add("error")
         validationBox.classList.remove("hidden");
+        return;
+    }
+
+    if (editableTask !== null) {
+        tasks = tasks.map((curElement) => {
+            if (curElement.id === editableTask) {
+                editableElement.textContent = taskText;
+                curElement.taskText = taskText;
+            }
+            return curElement;
+        })
+
+        editableTask = null;
+        editableElement = null;
+        taskContent.value = "";
         return;
     }
     // creating element
@@ -70,9 +91,13 @@ form.addEventListener("submit", (e) => {
         tasks = tasks.filter(curElement => objectContent.id !== curElement.id);
 
     });
+
     editBtn.addEventListener("click", () => {
-        editableTask = objectContent.id
-        taskContent.value = objectContent.taskText;
+        editableTask = objectContent.id;
+        editableElement = span;
+        taskContent.value = span.textContent;
+        
     })
+
 
 })

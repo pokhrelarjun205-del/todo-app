@@ -7,18 +7,22 @@ Importing Google Fonts
 
 /*
 ======================
-Css reset spacing
+CSS Reset
 ======================
 */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "SN Pro", sans-serif;
-    ;
 }
 
+/* Background Improve */
+body {
+    background: linear-gradient(135deg, #3d0417, #7a1035);
+}
+
+/* Main Layout */
 main {
     width: 90%;
     margin: 0 auto;
@@ -27,136 +31,153 @@ main {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-
 }
 
+/* Container */
 main .container {
-    padding: 30px;
-    border-radius: 10px;
+    padding: 35px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    justify-content: center;
+    gap: 25px;
     background-color: #590925;
     color: #fff;
-    width: 50%;
-    min-height: 50vh;
-
+    width: 100%;
+    max-width: 500px;
+    min-height: 55vh;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
+/* Heading */
 h1 {
     text-align: center;
-    font-size: 25px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
+/* Form */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 form input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #1b1b1b;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
 }
-
 
 form input:focus {
     border-color: #007FFF;
+    box-shadow: 0 0 0 3px rgba(0, 127, 255, 0.3);
 }
 
-
+/* Button */
 form button {
-    padding: 7px;
+    padding: 10px;
     cursor: pointer;
     background-color: #007FFF;
     color: #fff;
-    border-radius: 4px;
-    font-size: 18px;
-    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 form button:hover {
-
-    border: 1px solid #1b1b1b;
-    opacity: 0.7;
-
+    background-color: #005ecb;
+    transform: translateY(-2px);
 }
 
+/* Task List */
 ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
+/* Task Item */
 li {
     display: flex;
     width: 100%;
     list-style: none;
-    gap: 50px;
     background-color: #007FFF;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px 15px;
+    border-radius: 10px;
     justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    background-color: #005ecb;
+    transform: scale(1.02);
 }
 
 li span {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 500;
 }
 
+/* Small Box */
+.small-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
+.small-box input[type="checkbox"] {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+/* Actions */
 .task-action {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-weight: lighter;
+    gap: 12px;
 }
 
 .task-action button {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 50%;
     border: none;
-    padding: 4px;
+    padding: 6px;
+    background: #fff;
     color: #590925;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease;
 }
 
 .task-action button:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
-.small-box input[type="checkbox"] {
-    transform: scale(1.5);
-    cursor: pointer;
-}
-
-.small-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
+/* Completed */
 .completed-task {
     text-decoration: line-through;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
+/* Status Messages */
 .success {
-    color: green;
+    color: #00ff88;
+    font-weight: 500;
 }
 
 .error {
-    color: red;
+    color: #ff4d4d;
+    font-weight: 500;
 }
 
 .hidden {
