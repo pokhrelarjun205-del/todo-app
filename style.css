@@ -18,9 +18,7 @@ CSS Reset
 }
 
 /* Background Improve */
-body {
-    background: linear-gradient(135deg, #3d0417, #7a1035);
-}
+
 
 /* Main Layout */
 main {
@@ -43,7 +41,7 @@ main .container {
     background-color: #590925;
     color: #fff;
     width: 100%;
-    max-width: 500px;
+    max-width: 1000px;
     min-height: 55vh;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
